@@ -19,18 +19,33 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+				
+				/ {
+    macros {
+        ulaut: ulaut {
+            label = "Umlaut";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   \   |
 // |  ESC  |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
-// | C/ESC |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |  C/'  |
+// | Ulaut |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |  C/'  |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  | PLAY  |  K   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | LALT| LCMD | TAB  | BKSPC| SSHIFT |  |LOWER  | SPACE|  ENTER|  RCMD | RCTRL|
             bindings = <
 &kp GRAVE     &kp N1 &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7     &kp N8    &kp N9   &kp N0   &kp BSLH
 &kp ESC       &kp Q  &kp W     &kp F     &kp P          &kp G                            &kp J   &kp L      &kp U     &kp Y    &kp ;    &kp BSPC
-&mt LCTRL ESC &kp A  &kp R     &kp S     &kp T          &kp D                            &kp H   &kp N      &kp E     &kp I    &kp O    &mt RCTRL SQT
+&ulaut        &kp A  &kp R     &kp S     &kp T          &kp D                            &kp H   &kp N      &kp E     &kp I    &kp O    &mt RCTRL SQT
 &kp LSHFT     &kp Z  &kp X     &kp C     &kp V          &kp B     &kp C_MUTE  &kp C_PP   &kp K   &kp M      &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                      &kp LALT  &kp LCMD  &kp TAB        &kp BSPC  &sk LSHIFT  &mo 1 			&kp SPACE&kp ENTER &kp RCMD  &kp RCTRL
             >;
