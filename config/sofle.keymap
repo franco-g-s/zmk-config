@@ -35,19 +35,64 @@
     };
 };
 
+/ {
+    macros {
+        agrav: agrav {
+            label = "AGrav";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp ` >
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        aegu: aegu {
+            label = "AEgu";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp E>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        acirc: acirc {
+            label = "ACirc";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp I>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
+
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   \   |
-// |  ESC  |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
-// | Ulaut |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |  C/'  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  | PLAY  |  K   |  M    |  ,    |  .   |   /   | SHIFT |
-//               | LALT| LCMD | TAB  | BKSPC| SSHIFT |  |LOWER  | SPACE|  ENTER|  RCMD | RCTRL|
+// |   -   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   =   |
+// |  ESC  |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Y   |   ;   |   '   |
+// | Ulaut |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |  AEgu |
+// | ACirc |  Z  |  X  |  C   |  V   |  B   |  PLAY  |  | PSCRN |  K   |  M    |  ,    |  .   |   /   | AGrav |
+//               | LALT| LCMD | TAB  | BKSPC| SSHIFT |  | LOWER | SPACE|  ENTER|  RCMD | RCTRL|
             bindings = <
-&kp GRAVE     &kp N1 &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7     &kp N8    &kp N9   &kp N0   &kp BSLH
-&kp ESC       &kp Q  &kp W     &kp F     &kp P          &kp G                            &kp J   &kp L      &kp U     &kp Y    &kp ;    &kp BSPC
-&ulaut        &kp A  &kp R     &kp S     &kp T          &kp D                            &kp H   &kp N      &kp E     &kp I    &kp O    &mt RCTRL SQT
-&kp LSHFT     &kp Z  &kp X     &kp C     &kp V          &kp B     &kp C_MUTE  &kp C_PP   &kp K   &kp M      &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                     &kp LALT  &kp LCMD  &kp TAB        &kp BSPC  &sk LSHIFT  &mo 1 			&kp SPACE&kp ENTER &kp RCMD  &kp RCTRL
+&kp MINUS     &kp N1 &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7     &kp N8    &kp N9   &kp N0   &kp EQUAL
+&kp ESC       &kp Q  &kp W     &kp F     &kp P          &kp G                            &kp J   &kp L      &kp U     &kp Y    &kp ;    &kp APOS
+&ulaut        &kp A  &kp R     &kp S     &kp T          &kp D                            &kp H   &kp N      &kp E     &kp I    &kp O    &aegu
+&acirc        &kp Z  &kp X     &kp C     &kp V          &kp B     &kp C_PP  &kp PSCRN    &kp K   &kp M      &kp COMMA &kp DOT  &kp FSLH &kagrav
+                     &kp LALT  &kp LCMD  &kp TAB        &kp BSPC  &sk LSHIFT  &mo 1 	 &kp SPACE&kp ENTER &kp RCMD  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
