@@ -88,11 +88,11 @@
 // | ACirc |  Z  |  X  |   C   |   V   |   B   |  PLAY  |  | PSCRN |  K   |  M    |  ,    |  .   |   /   | CLCK  |
 //               | LALT|  LCMD | LOWER | BKSPC | SSHIFT |  | ENTER | SPACE| RAISE |  RCMD | RCTRL|
             bindings = <
-&kp ESC    &kp N1 &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6    &kp N7     &kp N8    &kp N9   &kp N0   &aegu
-&kp TAB    &kp Q  &kp W     &kp F     &kp P          &kp G                            &kp J     &kp L      &kp U     &kp Y    &kp ;    &agrav
-&ulaut     &kp A  &kp R     &kp S     &kp T          &kp D                            &kp H     &kp N      &kp E     &kp I    &kp O    &kp APOS
-&acirc     &kp Z  &kp X     &kp C     &kp V          &kp B     &kp C_PP    &kp PSCRN  &kp K     &kp M      &kp COMMA &kp DOT  &kp FSLH &kp CLCK
-                  &kp LALT  &kp LCMD  &mo 1          &kp BSPC  &sk LSHIFT  &ENTER     &kp SPACE &mo 2      &kp RCMD  &kp RCTRL
+&kp ESC    &kp N1 &kp N2    &kp N3    &kp N4    &kp N5                           &kp N6    &kp N7     &kp N8    &kp N9   &kp N0   &aegu
+&kp TAB    &kp Q  &kp W     &kp F     &kp P     &kp G                            &kp J     &kp L      &kp U     &kp Y    &kp ;    &agrav
+&ulaut     &kp A  &kp R     &kp S     &kp T     &kp D                            &kp H     &kp N      &kp E     &kp I    &kp O    &kp APOS
+&acirc     &kp Z  &kp X     &kp C     &kp V     &kp B     &kp C_PP    &kp PSCRN  &kp K     &kp M      &kp COMMA &kp DOT  &kp FSLH &kp CLCK
+                  &kp LALT  &kp LCMD  &mo 1     &kp BSPC  &sk LSHIFT  &ENTER     &kp SPACE &mo 2      &kp RCMD  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -106,11 +106,11 @@
 // | OUT_T | BT1  | BT2  |  BT3  | BT4  |  BT5  |        |  |       | ALT-  |   1   |   2   |   3   |   +   |   *   |
 //                |      |       |      | BKSPC | SSHIFT |  | ENTER | SPACE | RAISE |   0   |   .   |
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                &kp F7     &kp F8   &kp F9   &kp F10   &trans      &trans
-&bl BL_TOG    &bl BL_DE     &bl BL_INC    &kp UP        &trans        &trans                                &kp ESC    &kp N7   &kp N8   &kp N9    &trans      &trans
-&trans        &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans                                &kp EQUAL  &kp N4   &kp N5   &kp N6    &kp MINUS   &kp FSLSH
-&out OUT_TOG  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &trans       &trans.    &trans     &kp N1   &kp N2   &kp N3    &kp PLUS    &kp STAR
-                           &trans         &trans        &trans        &kp BKSPC     &sk LSHIFT   &kp ENTER  &kp SPACE  &mo 2    &kp N0   &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                &kp F7     &kp F8   &kp F9   &kp F10   &none       &none 
+&bl BL_TOG    &bl BL_DE     &bl BL_INC    &kp UP        &none         &none                                 &kp ESC    &kp N7   &kp N8   &kp N9    &none       &none 
+&none         &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                                 &kp EQUAL  &kp N4   &kp N5   &kp N6    &kp MINUS   &kp FSLSH
+&out OUT_TOG  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &trans       &trans.    &none      &kp N1   &kp N2   &kp N3    &kp PLUS    &kp STAR
+                           &trans         &trans        &trans        &kp BKSPC     &sk LSHIFT   &kp ENTER  &kp SPACE  &mo 2    &kp N0   &none 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
