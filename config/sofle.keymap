@@ -65,7 +65,7 @@ keymap {
 &aegu   &kp Q  &kp W     &kp F     &kp P     &kp G                                   &kp J        &kp L      &kp U     &kp Y    &kp SEMI &kp MINUS
 &ulaut  &kp A  &kp R     &kp S     &kp T     &kp D                                   &kp H        &kp N      &kp E     &kp I    &kp O    &kp APOS
 &acirc  &kp Z  &kp X     &kp C     &kp V     &kp B            &kp C_PP    &kp PSCRN  &kp K        &kp M      &kp COMMA &kp DOT  &kp FSLH &kp CLCK
-               &kp LCTRL &kp LALT  &kp LCMD  &mt LSHIFT BSPC  &kp LSHIFT  &mo 1      &lt 1 SPACE  &kp RETURN &kp TAB   &kp ESC
+               &kp LCTRL &kp LALT  &kp LCMD  &mt LSHIFT BSPC  &kp LSHIFT  &mo 1      &lt LOWER SPACE  &kp RETURN &kp TAB   &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
