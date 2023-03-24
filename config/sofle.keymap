@@ -76,13 +76,13 @@ keymap {
 // |       |  !   |   @   |   #   |  $   |   %   |                   |   ^   |   &   |   *   |   (   |   )   | EQUAL |
 // |       |      |       |   ^   |      |       |                   |   º   |   /   |   |   |   \   |       | MINUS |
 // |       |      |   <-  |   v   |  ->  |       |                   |   ~   |   [   |   ]   |   {   |   }   |   '   |
-// | OUT_T | BT1  |  BT2  |  BT3  | BT4  |  BT5  |  PREV  |  | NEXT  |   ç   |       |   ,   |   .   |   /   |       |
+// | BTNXT | BT1  |  BT2  |  BT3  | BT4  |  BT5  |  PREV  |  | NEXT  |   ç   |       |   ,   |   .   |   /   |       |
 //                | LCTRL | LALT  | LCMD | BKSPC |  SHIFT |  |       | SPACE | ENTER |  TAB  |  ESC  |
             bindings = <
 &none         &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                             &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR    &kp EQUAL
 &none         &none         &none         &kp UP        &none         &none                                 &none      &kp FSLH  &kp PIPE  &kp BSLH  &none       &kp MINUS
 &none         &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                                 &kp TILDE  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC    &kp APOS
-&none         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_SEL 5  &kp C_PREV   &kp C_NEXT  &none      &none     &kp COMMA &kp DOT   &kp FSLH    &none
+&bt BT_NXT    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_SEL 5  &kp C_PREV   &kp C_NEXT  &none      &none     &kp COMMA &kp DOT   &kp FSLH    &none
 &trans        &trans        &trans        &kp BSPC      &kp LSHIFT   &trans        &kp SPACE    &kp ENTER   &kp TAB    &kp ESC
             >;
 
