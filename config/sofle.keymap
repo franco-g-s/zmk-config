@@ -61,11 +61,11 @@ keymap {
 
         default_layer {
             bindings = <
-&agrav  &kp N1 &kp N2    &kp N3    &kp N4    &kp N5                           &kp N6    &kp N7     &kp N8    &kp N9   &kp N0   &kp EQUAL
-&aegu   &kp Q  &kp W     &kp F     &kp P     &kp G                            &kp J     &kp L      &kp U     &kp Y    &kp SEMI &kp MINUS
-&ulaut  &kp A  &kp R     &kp S     &kp T     &kp D                            &kp H     &kp N      &kp E     &kp I    &kp O    &kp APOS
-&acirc  &kp Z  &kp X     &kp C     &kp V     &kp B     &kp C_PP    &kp PSCRN  &kp K     &kp M      &kp COMMA &kp DOT  &kp FSLH &kp CLCK
-               &kp LCTRL &kp LALT  &kp LCMD  &kp BSPC  &kp LSHIFT  &mo 1      &kp SPACE &kp RETURN &kp TAB   &kp ESC
+&agrav  &kp N1 &kp N2    &kp N3    &kp N4    &kp N5                                  &kp N6       &kp N7     &kp N8    &kp N9   &kp N0   &kp EQUAL
+&aegu   &kp Q  &kp W     &kp F     &kp P     &kp G                                   &kp J        &kp L      &kp U     &kp Y    &kp SEMI &kp MINUS
+&ulaut  &kp A  &kp R     &kp S     &kp T     &kp D                                   &kp H        &kp N      &kp E     &kp I    &kp O    &kp APOS
+&acirc  &kp Z  &kp X     &kp C     &kp V     &kp B            &kp C_PP    &kp PSCRN  &kp K        &kp M      &kp COMMA &kp DOT  &kp FSLH &kp CLCK
+               &kp LCTRL &kp LALT  &kp LCMD  &mt LSHIFT BSPC  &kp LSHIFT  &mo 1      &lt 1 SPACE  &kp RETURN &kp TAB   &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -83,7 +83,7 @@ keymap {
 &none         &none         &none         &kp UP        &none         &none                                 &none      &kp FSLH  &kp PIPE  &kp BSLH  &none       &kp MINUS
 &none         &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                                 &kp TILDE  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC    &kp APOS
 &bt BT_NXT    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_SEL 5  &kp C_PREV   &kp C_NEXT  &none      &none     &kp COMMA &kp DOT   &kp FSLH    &none
-&trans        &trans        &trans        &kp BSPC      &kp LSHIFT   &trans        &kp SPACE    &kp ENTER   &kp TAB    &kp ESC
+&trans        &trans        &trans        &trans.       &trans       &trans        &trans       &kp ENTER   &kp TAB    &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
