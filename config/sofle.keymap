@@ -92,7 +92,7 @@ keymap {
 &aegu   &kp Q  &kp W     &kp F     &kp P     &kp G                                     &kp J        &kp L      &kp U     &kp Y    &kp SEMI &none
 &ulaut  &kp A  HRML(R,       S,       T)     &kp D                                     &kp H        HRMR(N,       E,        I)    &kp O    &none
 &acirc  &kp Z  &kp X     &kp C     &kp V     &kp B               &kp C_PP   &none      &kp K        &kp M      &kp COMMA &kp DOT  &kp FSLH &none
-               &none    &none     &lt LEF TAB  &lt LSHIFT BSPC   &none      &none      &kp SPACE    &lt RIG ENTER &none   &kp ESC
+               &none    &none     &lt LEF TAB  &mt LSHIFT BSPC   &none      &none      &kp SPACE    &lt RIG ENTER &none   &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
